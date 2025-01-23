@@ -11,6 +11,8 @@ jobs:
         with:
           node-version: 18
       - name: Install dependecies
-        run: npm install
+        run: |
+          cd 02\ Starting\ Project/
+          npm install
       - name: Run tests
         run: npm test
